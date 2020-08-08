@@ -1,13 +1,46 @@
 @charset="utf-8";
 @font-face { font-family: 'S-CoreDream-3Light'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff'); font-weight: normal; font-style: normal; }
+.daum{color: #e73d3d;}
 
+::-webkit-scrollbar{
+    width: 15px;
+    background-color: #ffffff;
+}
+::-webkit-scrollbar-track{
+    
+    
+}
+::-webkit-scrollbar-thumb{
+    background-color: #e73d3d;
+    border-radius: 2px;
+} 
+::-webkit-scrollbar-button{
+    background-color: #e73d3d;
+}
+::-webkit-scrollbar-corner{
+    background-color: #e73d3d;
+}
+
+body.night .header{background-color: #000;}
+body.night .header .gnb li a{color: #fff;}
+body.night .sidebar{background-color: #000;}
+body.night .content{background-color: #101010;}
+body.night .day{background-color: #000; color: #fff;}
+body.night .header .mode-cover .mode .switch{left: 38px;}
 
 .container{width: 100%; height: 200%; position: relative;}
 .header{width: 100%; height: 80px; position: sticky; top: 0; z-index: 500; background-color: #fff; box-shadow: 3px 0 3px #666;}
 .header .logo{display: block; width: 200px; height: 100%; background-image: url('../src/logo.png'); background-repeat: no-repeat; background-position: center center; float: left;}
 .header .gnb{display: block; height: 100%; width: auto; float: left;}
-.header .gnb li{display: block; float: left; height: 100%; width: auto;}
+.header .gnb li{display: block; float: left; height: 100%; width: auto; box-sizing: border-box;}
+.header .gnb li:hover{border-bottom: 3px solid #e73d3d;}
 .header .gnb li a{display: block; line-height: 80px; text-align: center; padding: 0 30px; font-family: 'S-CoreDream-3Light'; font-size: 1.1rem; font-weight: bold;}
+.header .mode-cover{width: 80px; height: 100%; float: right;}
+
+.header .mode-cover .mode{width: 70px; height: 40px; border-radius: 20px; margin-top: 18px; border-radius: 40px; background: #e73d3d; box-shadow: inset 5px -5px 10px #9d2929, inset -5px 5px 10px #ff5151;position: relative; cursor: pointer;}
+
+.header .mode-cover .mode .switch{width: 25px; height: 25px;position: absolute; top: 8px; left: 8px; border-radius: 50%; background: #fff;}
+
 .sidebar{position: fixed; z-index: 300; top: 80px; left: 0; width: 80px; height: 100%; background-color: #fff; box-shadow: 0 3px 3px #666;}
 .sidebar ul{display: block; width: 100%; height: auto;}
 .sidebar ul li{display: block; width: 100%; height: 80px;}
@@ -19,28 +52,30 @@
 .content{width: calc(100% - 80px); height: auto; background-color: #f1f1f1; position: absolute; right: 0;}
 
 .day-webtoon-wrap{width: 96%; height: auto; margin: 0 auto;}
-.day-webtoon{width: 100%; height: 100px; margin: 20px 0;}
-.day{width: 100px; height: 100px; float: left; background-color: #fff; box-shadow: 0 3px 0 #ccc; color: #000; font-family: 'S-CoreDream-3Light'; font-weight: bold; text-align: center; line-height: 100px; font-size: 1.3rem;}
-.webtoon-cover{width: calc(100% - 100px); height: 100%; float: left;}
+.day-webtoon{width: 100%; height: 130px; margin: 20px 0;}
+.day{width: 130px; height: 130px; float: left; background-color: #fff; box-shadow: 0 3px 0 #ccc; color: #000; font-family: 'S-CoreDream-3Light'; font-weight: bold; text-align: center; line-height: 130px; font-size: 1.5rem;}
+.day-webtoon:hover .day{background-color: #e73d3d; color: #fff;}
+.webtoon-cover{width: calc(100% - 130px); height: 100%; float: left;}
 .webtoon-wrap{width: auto; height: 100%;}
 .webtoon{width: 100px; height: 100px; float: left;}
 
 .card-box-wrap{width: 96%; margin: 0 auto; height: 740px;}
-.card-box{width: 23.5%; height: 350px; margin-right: 2%; margin-bottom: 20px; float: left; background-color: #999;}
+.card-box{width: 23.5%; height: 350px; margin-right: 2%; margin-bottom: 20px; float: left; background-color: #999; box-shadow: 5px 5px 0 #a0a0a0; cursor: pointer;}
 .card-box:nth-child(4), .card-box:last-child{margin-right: 0;}
+.card-box:hover{box-shadow: 10px 10px 0 #a0a0a0;}
 
 .footer-wrap{width: 100%; height: 300px;}
 .footer-box{width: 100%; height: 250px; }
 .footer-inner{width: 50%; height: 100%; float: left;}
-.footer-img{background-color: darkslateblue;}
+.footer-img{background-color: #929292;}
 .footer{background-color: #606060;}
 .footer .footer-link{display: block; width: 90%; height: 30px; margin: 10% auto 10px; }
 .footer .footer-link li{display: block; width: auto; height: 30px; float: left; }
-.footer .footer-link li a{display: block; line-height: 30px; padding: 0 20px; color: #fff;}
+.footer .footer-link li a{display: block; line-height: 30px; padding: 0 20px; color: #fff; font-family: 'S-CoreDream-3Light';}
 .footer .footer-btn{display: block; width: 490px; height: 50px; margin: 0 auto;}
 .footer .footer-btn .btn{display: block; width: 150px; margin-right: 20px; height: 50px; box-sizing: border-box; border: 2px solid #fff; border-radius: 7px; float: left; } 
 .footer .footer-btn .btn:last-child{margin-right: 0;}
-.footer .footer-btn .btn a{display: block; width: 100%; height: 100%; text-align: center; line-height: 48px; font-size: 16px; color: #fff; }
+.footer .footer-btn .btn a{display: block; width: 100%; height: 100%; text-align: center; line-height: 48px; font-size: 16px; color: #fff;font-family: 'S-CoreDream-3Light';}
 .footer-comment{height: 50px; width: 100%; background-color: #333;}
 .footer-comment p{font-family: 'S-CoreDream-3Light'; color: #666; text-align: center; line-height: 50px; font-size: 14px; letter-spacing: 2px; font-weight: 700;}
 
