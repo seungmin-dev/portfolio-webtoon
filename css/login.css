@@ -1,0 +1,30 @@
+@charset="utf-8";
+
+.container{width: 100%; height: 100%;}
+.page{width: 100%; height: 100%; overflow: hidden; background-image: url('../src/loginbg.jpg'); background-size: 100% auto; background-position: center; background-repeat: no-repeat;}
+.inner-page{width: 96%; max-width: 1300px; height: 100%; margin: 0 auto; position: relative;}
+
+.login-box{width: 100%; height: 900px; position: relative;}
+.login{width: 30%; height: 400px; position: absolute; top: 17%; left: 35%; background-color: #fff; z-index: 10;}
+
+.login-wrap{width: 84%; height: 70%; padding-top: 15%; padding-left: 8%;}
+.login-wrap a{color: #777; font-size: 15px; line-height: 20px; display: block; margin: 15px 0; float: left; font-weight: 400;}
+.title{text-align: center; padding: 0px 0 50px 0; color: #000; font-size: 2rem; font-family: 'S-CoreDream-3Light'; font-weight: bold;}
+
+.input-wrap{width: 70%; height: 100px; float: left;}
+.input-wrap input{font-family: "FontAwesome"; height: 45px; width: 96%; outline: none; border: none; border: 1px solid #aaa; border-radius: 10px; text-indent: 15px; box-sizing: border-box;}
+input:first-child{margin-bottom: 10px;}
+
+.enter{width: 30%; height: 100px; float: left;}
+.enter .btn{display: block; width: 100%; height: 100%; margin:0 auto; border-radius: 10px; background-color: #e73d3d; cursor: pointer; color: #fff; text-align: center; line-height: 24px; font-size: 1.1rem; outline: none; border: none; font-family: 'S-CoreDream-3Light';}
+
+
+input[id="cb"] + label {display: inline-block; width: 20px; height: 20px; border: 1px solid #777; box-sizing: border-box; cursor: pointer; margin: 15px 7px 15px 0; float: left; border-radius: 5px;}
+input[id="cb"]:checked + label {background-color: #e73d3d; border: 1px solid #da281c;}
+input[id="cb"] {display: none;}
+
+#saveid{padding-right: 20px; border-right: 1px solid #777; }
+#forgot{padding: 0 20px; border-right: 1px solid #777;}
+#sign{padding-left: 20px;}
+
+.login-shadow{width: 30%; height: 400px; position: absolute; top: 19%; right: 34%; background-color: #e73d3d;}
