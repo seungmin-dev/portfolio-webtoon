@@ -1,0 +1,46 @@
+@charset="utf-8";
+
+::-webkit-scrollbar{
+    width: 15px;
+    background-color: #ffffff;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #e73d3d;
+    border-radius: 2px;
+}
+::-webkit-scrollbar-button{
+    background-color: #e73d3d;
+}
+::-webkit-scrollbar-corner{
+    background-color: #e73d3d;
+}
+
+body.night .header{background-color: #000;}
+body.night .header .gnb li a{color: #fff;}
+body.night .sidebar{background-color: #000;}
+body.night .content{background-color: #101010;}
+body.night .day{background-color: #000; color: #fff;}
+body.night .header .mode-cover .mode .switch{left: 38px;}
+body.night .login{background-color: #222;}
+body.night .login .title{color: #fff;}
+
+.container{width: 100%; height: 100%; position: relative;}
+.header{width: 100%; height: 80px; position: sticky; top: 0; z-index: 500; background-color: #fff; box-shadow: 3px 0 3px #666;}
+.header .logo{display: block; width: 200px; height: 100%; background-image: url('../src/logo.png'); background-repeat: no-repeat; background-position: center center; float: left;}
+.header .gnb{display: block; height: 100%; width: auto; float: left;}
+.header .gnb li{display: block; float: left; height: 100%; width: auto; box-sizing: border-box;}
+.header .gnb li:hover{border-bottom: 3px solid #e73d3d;}
+.header .gnb li a{display: block; line-height: 80px; text-align: center; padding: 0 30px; font-family: 'S-CoreDream-3Light'; font-size: 1.1rem; font-weight: bold;}
+.header .mode-cover{width: 80px; height: 100%; float: right;}
+
+.header .mode-cover .mode{width: 70px; height: 40px; border-radius: 20px; margin-top: 18px; border-radius: 40px; background: #e73d3d; box-shadow: inset 5px -5px 10px #9d2929, inset -5px 5px 10px #ff5151;position: relative; cursor: pointer;}
+
+.header .mode-cover .mode .switch{width: 25px; height: 25px;position: absolute; top: 8px; left: 8px; border-radius: 50%; background: #fff;}
+
+.sidebar{position: fixed; z-index: 300; top: 80px; left: 0; width: 80px; height: 100%; background-color: #fff; box-shadow: 0 3px 3px #666;}
+.sidebar ul{display: block; width: 100%; height: auto;}
+.sidebar ul li{display: block; width: 100%; height: 80px;}
+.sidebar ul li a{display: block; width: 100%; height: 100%; background-size: 65% auto; background-position: center center; background-repeat: no-repeat; }
+.sidebar ul li:first-child a{background-image: url('../src/icon0.svg');}
+.sidebar ul li:nth-child(2) a{background-image: url('../src/icon1.svg');}
+.sidebar ul li:nth-child(3) a{background-image: url('../src/icon2.svg');}

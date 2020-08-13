@@ -1,0 +1,16 @@
+@charset="utf-8";
+
+.footer-wrap{width: 100%; height: 300px;}
+.footer-box{width: 100%; height: 250px; }
+.footer-inner{width: 50%; height: 100%; float: left;}
+.footer-img{background-color: #929292;}
+.footer{background-color: #606060;}
+.footer .footer-link{display: block; width: 90%; height: 30px; margin: 10% auto 10px; }
+.footer .footer-link li{display: block; width: auto; height: 30px; float: left; }
+.footer .footer-link li a{display: block; line-height: 30px; padding: 0 20px; color: #fff; font-family: 'S-CoreDream-3Light';}
+.footer .footer-btn{display: block; width: 490px; height: 50px; margin: 0 auto;}
+.footer .footer-btn .btn{display: block; width: 150px; margin-right: 20px; height: 50px; box-sizing: border-box; border: 2px solid #fff; border-radius: 7px; float: left; }
+.footer .footer-btn .btn:last-child{margin-right: 0;}
+.footer .footer-btn .btn a{display: block; width: 100%; height: 100%; text-align: center; line-height: 48px; font-size: 16px; color: #fff;font-family: 'S-CoreDream-3Light';}
+.footer-comment{height: 50px; width: 100%; background-color: #333;}
+.footer-comment p{font-family: 'S-CoreDream-3Light'; color: #666; text-align: center; line-height: 50px; font-size: 14px; letter-spacing: 2px; font-weight: 700;}
